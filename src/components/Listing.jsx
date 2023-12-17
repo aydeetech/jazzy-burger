@@ -12,13 +12,15 @@ import { FaRegHeart,FaPlus, FaMinus  } from "react-icons/fa";
 const Listing = () => {
 
   const [count, setCount] = useState(1)
-  const IncreaseCount = () => {
+  const IncreaseCount = (e) => {
     setCount(count + 1)
   }
 
   const DecreaseCount = () => {
     setCount(count - 1)
   }
+
+  
   return (
     <div className='listing-wrapper flex'>
 

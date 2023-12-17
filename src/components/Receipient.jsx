@@ -15,7 +15,7 @@ const Receipient = () => {
                 <label htmlFor="email">Email</label>
                 <input type="email" placeholder='example@email.com' />
                 <label htmlFor="phonenumber">Phone number</label>
-                <div className='phone'><span>+234</span><input type="number" placeholder='818 000 000' maxLength='10'/></div>
+                <div className='phone'><span>+234</span><input type="number" placeholder='818 000 0000' maxLength='10'/></div>
                 <button className='update'>Submit</button>
             </form>
             </div>
