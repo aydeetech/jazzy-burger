@@ -23,9 +23,31 @@
     border-radius: 0.3125rem;
 }
 
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.error-wrapper img {
+  width: 60%;
+}
+
+.error-wrapper button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
 @media screen and (max-width: 450px) {
     .home-container {
         padding-inline: 2rem;
+    }
+
+    .error-wrapper img {
+      width: 80%;
     }
 }
 

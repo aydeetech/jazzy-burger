@@ -7,6 +7,7 @@ import SignupPage from './pages/SignupPage'
 import RecipientPage from './pages/RecipientPage'
 import AddressPage from './pages/AddressPage'
 import AllProductsPage from './pages/AllProductsPage'
+import ErrorPage from './pages/ErrorPage'
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
           <Route path='/updaterecipient' element = {<RecipientPage />} />
           <Route path='/addaddress' element= {<AddressPage />} />
           <Route path='/allproducts' element= {<AllProductsPage />} />
+          <Route path= '*' element ={<ErrorPage />} />
         </Routes>
       </Router>
     </>
