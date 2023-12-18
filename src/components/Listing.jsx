@@ -42,7 +42,7 @@ const Listing = () => {
             <div className='flex price-container'>
             <div className="food-price">
               <span>Total Price</span>
-              <p>N 10500.0</p>
+              <p><span className="naira">N</span> 10500.0</p>
             </div>
             <div className="flex counter">
             <button><FaMinus /></button>
@@ -74,7 +74,7 @@ const Listing = () => {
             <div className='flex price-container'>
             <div className="food-price">
               <span>Total Price</span>
-              <p>N 10500.0</p>
+              <p><span className="naira">N</span> 10500.0</p>
             </div>
             <div className="flex counter">
             <button onClick={DecreaseCount}><FaMinus /></button>
@@ -105,7 +105,7 @@ const Listing = () => {
             <div className='flex price-container'>
             <div className="food-price">
               <span>Total Price</span>
-              <p>N 10500.0</p>
+              <p><span className="naira">N</span> 10500.0</p>
             </div>
             <div className="flex counter">
             <button onClick={DecreaseCount}><FaMinus /></button>
@@ -136,7 +136,7 @@ const Listing = () => {
             <div className='flex price-container'>
             <div className="food-price">
               <span>Total Price</span>
-              <p>N 10500.0</p>
+              <p><span className="naira">N</span> 10500.0</p>
             </div>
             <div className="flex counter">
             <button onClick={DecreaseCount}><FaMinus /></button>
@@ -167,7 +167,7 @@ const Listing = () => {
             <div className='flex price-container'>
             <div className="food-price">
               <span>Total Price</span>
-              <p>N 10500.0</p>
+              <p><span className="naira">N</span> 10500.0</p>
             </div>
             <div className="flex counter">
             <button><FaMinus /></button>
@@ -198,7 +198,7 @@ const Listing = () => {
             <div className='flex price-container'>
             <div className="food-price">
               <span>Total Price</span>
-              <p>N 10500.0</p>
+              <p><span className="naira">N</span> 10500.0</p>
             </div>
             <div className="flex counter">
             <button><FaMinus /></button>

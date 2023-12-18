@@ -11,7 +11,7 @@ const Receipt = () => {
           <div className="flex product">
             <p className="productname">Double Grilled Chicken Burger</p>
             <button className="delete"><FaRegTrashAlt /></button>
-            <p>N 12000</p>
+            <p><span className="naira">N</span> 12000</p>
           </div>
 
           <div className="flex counter">
@@ -24,21 +24,21 @@ const Receipt = () => {
         <div className="receipt">
           <div className="item-total flex">
             <p>Item Total :</p>
-            <p>N 12000</p>
+            <p><span className="naira">N</span> 12000</p>
           </div>
           <div className="item-total flex">
             <p>Discount :</p>
-            <p>N 0</p>
+            <p><span className="naira">N</span> 0</p>
           </div>
           <div className="item-total flex">
             <p>Delivery Charge:</p>
-            <p>N 0</p>
+            <p><span className="naira">N</span> 0</p>
           </div>
         </div>
 
         <div className="flex total">
           <p>Total: </p>
-          <p>N 12000</p>
+          <p><span className="naira">N</span> 12000</p>
         </div>
       </div>
     </div>
