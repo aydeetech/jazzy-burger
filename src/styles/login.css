@@ -25,6 +25,7 @@ form {
   background-color: var(--primary);
   color: #fff;
   border-radius: 0.625rem;
+  font-size: 0.8rem;
 }
 
 input {
