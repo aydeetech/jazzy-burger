@@ -43,7 +43,7 @@ const Login = () => {
     setTimeout(() => {
       const timeOut = setTimeout(() => {
         removeAlert();
-      }, 3000);
+      }, 30000);
       return () => clearTimeout(timeOut);
     });
   }, [isError.type]);

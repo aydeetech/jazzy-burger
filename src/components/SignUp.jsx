@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [user, setUser] = useState({
-    email: "",
     firstname: "",
     lastname: "",
     email: "",
@@ -20,7 +19,7 @@ const SignUp = () => {
   const handleSignUp = (e) => {
     e.preventDefault();
 
-    const {email, password, confirmPassword, firstname, phone} = user
+    const {email, password, confirmPassword, firstname, phone, lastname, } = user
 
     if (!email.includes('@' && '.com')) {
       showAlert({msg: 'Enter valid email address', type: 'danger'})
@@ -31,6 +30,9 @@ const SignUp = () => {
       showAlert({msg: 'Enter valid password', type: 'danger'})
     } else if (password !== confirmPassword) {
       showAlert({msg: 'Password does not Match', type: 'danger'})
+    }
+    else if (!email && !password && !confirmPassword && !firstname && !lastname && !phone) {
+      showAlert({msg: 'Provide all necessary information', type: 'danger'})
     }
     else {
       showAlert({msg: `Congratulations ${firstname}, You have successfully registered`, type: 'success'})
@@ -53,7 +55,7 @@ const SignUp = () => {
     setTimeout(() => {
       const timeOut = setTimeout(() => {
         removeAlert();
-      }, 3000);
+      }, 30000);
       return () => clearTimeout(timeOut);
     });
   }, [isError.type]);
@@ -84,6 +86,7 @@ const SignUp = () => {
           name="firstname"
           value={user.firstname}
           onChange={handleChange}
+          required
         />
         <label htmlFor="lastname">Last Name</label>
         <input
@@ -92,6 +95,7 @@ const SignUp = () => {
           name="lastname"
           value={user.lastname}
           onChange={handleChange}
+          required
         />
         <label htmlFor="email">Email</label>
         <input
@@ -108,6 +112,7 @@ const SignUp = () => {
             type="number"
             name="phone"
             maxLength= '10'
+            pattern="[0-9]"
             value={user.phone}
             onChange={handleChange}
           />
